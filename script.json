@@ -1,7 +1,7 @@
-#ABRIGO
+-- #ABRIGO
 SELECT * FROM t_safehub_cadastro_abrigo;
 
-POST
+-- POST
 {
   "nomeAbrigo": "Zona Leste",
   "capacidadePessoa": 2000,
@@ -15,7 +15,7 @@ POST
   "localizacao": "Av. Dep. Cantídio Sampaio, 760, São Paulo"
 }
 
-PUT
+-- PUT
 {
   "nomeAbrigo": "Zona Leste",
   "capacidadePessoa": 4000,
@@ -25,10 +25,10 @@ PUT
 
 
 
-#USUARIO
+-- #USUARIO
 SELECT * FROM t_safehub_cadastro_usuario;
 
-POST
+-- POST
 {
   "nome": "Roberto",
   "email": "roberto@gmail.com",
@@ -42,7 +42,7 @@ POST
   "chaveAbrigo": 2
 }
 
-PUT
+-- PUT
 {
   "nome": "Mauricio Lima",
   "email": "maumau@gmail.com",
@@ -52,10 +52,10 @@ PUT
 
 
 
-#ESTOQUE
+-- #ESTOQUE
 SELECT * FROM t_safehub_estoque_abrigo;
 
-POST
+-- POST
 {
   "alimentos": [
     {
@@ -99,7 +99,7 @@ POST
 }
 
 
-PUT
+-- PUT
 {
   "alimentos": [
     {
