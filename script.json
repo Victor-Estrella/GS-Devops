@@ -1,0 +1,149 @@
+#ABRIGO
+SELECT * FROM t_safehub_cadastro_abrigo;
+
+POST
+{
+  "nomeAbrigo": "Zona Leste",
+  "capacidadePessoa": 2000,
+  "nomeResponsavel": "Lucas Silva",
+  "localizacao": "Av. Rio das Pedras, 387, São Paulo"
+}
+{
+  "nomeAbrigo": "Zona Norte",
+  "capacidadePessoa": 1000,
+  "nomeResponsavel": "Maria das Costas",
+  "localizacao": "Av. Dep. Cantídio Sampaio, 760, São Paulo"
+}
+
+PUT
+{
+  "nomeAbrigo": "Zona Leste",
+  "capacidadePessoa": 4000,
+  "nomeResponsavel": "Joao Pedro",
+  "localizacao": "Av. Rio das Pedras, 387, São Paulo"
+}
+
+
+
+#USUARIO
+SELECT * FROM t_safehub_cadastro_usuario;
+
+POST
+{
+  "nome": "Roberto",
+  "email": "roberto@gmail.com",
+  "senha": "12345678",
+  "chaveAbrigo": 1
+}
+{
+  "nome": "Mauricio Lima",
+  "email": "mauricio@gmail.com",
+  "senha": "mauricio123123",
+  "chaveAbrigo": 2
+}
+
+PUT
+{
+  "nome": "Mauricio Lima",
+  "email": "maumau@gmail.com",
+  "senha": "123123maumau",
+  "chaveAbrigo": 2
+}
+
+
+
+#ESTOQUE
+SELECT * FROM t_safehub_estoque_abrigo;
+
+POST
+{
+  "alimentos": [
+    {
+      "idEstoque": 1,
+      "nome": "Arroz",
+      "quantidade": 20
+    },
+    {
+      "idEstoque": 2,
+      "nome": "Feijão",
+      "quantidade": 30
+    }
+  ],
+  "roupas": [
+    {
+      "idEstoque": 3,
+      "nome": "Camiseta",
+      "quantidade": 10
+    },
+    {
+      "idEstoque": 4,
+      "nome": "Calça",
+      "quantidade": 20
+    }
+  ],
+  "medicamentos": [
+    {
+      "idEstoque": 5,
+      "nome": "Dorflex",
+      "quantidade": 30
+    },
+    {
+      "idEstoque": 6,
+      "nome": "Buscopan",
+      "quantidade": 40
+    }
+  ],
+  "litrosAgua": 30,
+  "numeroPessoa": 300,
+  "chaveAbrigo": 1
+}
+
+
+PUT
+{
+  "alimentos": [
+    {
+      "idEstoque": 1,
+      "nome": "Arroz",
+      "quantidade": 10
+    },
+    {
+      "idEstoque": 2,
+      "nome": "Feijão",
+      "quantidade": 25
+    },
+    {
+      "idEstoque": 7,
+      "nome": "Carne",
+      "quantidade": 20
+    }
+  ],
+  "roupas": [
+    {
+      "idEstoque": 3,
+      "nome": "Camiseta",
+      "quantidade": 8
+    },
+    {
+      "idEstoque": 4,
+      "nome": "Calça",
+      "quantidade": 10
+    }
+  ],
+  "medicamentos": [
+    {
+      "idEstoque": 5,
+      "nome": "Dorflex",
+      "quantidade": 0
+    },
+    {
+      "idEstoque": 6,
+      "nome": "Buscopan",
+      "quantidade": 20
+    }
+  ],
+  "litrosAgua": 20,
+  "numeroPessoa": 400,
+  "chaveAbrigo": 1
+}
+
